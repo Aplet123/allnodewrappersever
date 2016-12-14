@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Aplet123/allnodewrappersever/issues"
   },
-  "homepage": "https://github.com/Aplet123/allnodewrappersever#readme"
+  "homepage": "https://github.com/Aplet123/allnodewrappersever#readme",
+  "dependencies": {
+    "request": "^2.79.0",
+    "cheerio": "^0.22.0"
+  }
 }
