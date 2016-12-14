@@ -1,0 +1,22 @@
+{
+  "name": "aplet-wordnet",
+  "version": "1.0.0",
+  "description": "A wordnet search.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo oh noes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aplet123/allnodewrappersever.git"
+  },
+  "keywords": [
+    "wordnet"
+  ],
+  "author": "Un Known",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aplet123/allnodewrappersever/issues"
+  },
+  "homepage": "https://github.com/Aplet123/allnodewrappersever#readme"
+}
