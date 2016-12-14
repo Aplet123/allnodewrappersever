@@ -25,3 +25,7 @@ function search(word) {
     });
     return promise;
 }
+
+module.exports = {
+    search
+};
