@@ -97,10 +97,10 @@ function init() {
     });
     Object.defineProperty(String.prototype, "nonURI", {
         get: function() {
-            return encodeURI(this);
+            return decodeURI(this);
         },
         set: function(val) {
-            var str = decodeURI(val);
+            var str = encodeURI(val);
             for(let i in this) {
                 delete this[i];
             }
