@@ -147,3 +147,11 @@ Returns a `Boolean` representing whether or not the given value is the same as t
 
 #####Arguments
 `value` - The `Object` to compare with.
+
+Promises
+-------------
+
+> safe
+
+**READ-ONLY**  
+Returns a `Promise` that will not give unhandled promise rejections, and will instead log errors to console.
