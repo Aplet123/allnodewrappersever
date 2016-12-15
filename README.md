@@ -57,6 +57,7 @@ Deletes the value or values listed by index. Returns an `Object`
 `index` - A `String` or `Array` representing or listing indexes that should be deleted.
 
 > merge(object, overwrite)
+
 Merges 2 `Object`s together. Returns an `Object`.
 
 #####Arguments
@@ -74,18 +75,12 @@ Deletes each element that does not satisfy a filter function. Returns an `Object
 &nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being filtered.  
 
 > indexOf(value, strict)
+
 Returns the index of the given value, returns `null` if the value was not found.
 
 #####Arguments
 `value` - The value to search for.
 `strict` - Whether or not the strict Boolean equality operator should be used (`===`). Defaults to `true`.
-
-> merge(object, overwrite)
-Merges 2 `Object`s together. Returns an `Object`.
-
-#####Arguments
-`object` - The `Object` which will be merged.
-`overwrite` - A `Boolean` representing whether or not to overwrite current properties of the `Object`.
 
 > every(function)
 
@@ -97,7 +92,7 @@ Tests if every element of an `Object` follows a test `Function`.
 &nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the element.  
 &nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being tested. 
 
-> every(function)
+> some(function)
 
 Tests if at least one element of an `Object` follows a test `Function`.
 
@@ -106,3 +101,49 @@ Tests if at least one element of an `Object` follows a test `Function`.
 &nbsp;&nbsp;&nbsp;&nbsp;`value` - The value of the element.  
 &nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the element.  
 &nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being tested. 
+
+> find(function)
+
+Finds the first element of an `Object` that follows a test `Function`.
+
+#####Arguments
+`function` - A `Function` taking the following parameters:  
+&nbsp;&nbsp;&nbsp;&nbsp;`value` - The value of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being tested. 
+
+> findIndex(function)
+
+Finds the index of the first element of an `Object` that follows a test `Function`.
+
+#####Arguments
+`function` - A `Function` taking the following parameters:  
+&nbsp;&nbsp;&nbsp;&nbsp;`value` - The value of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being tested. 
+
+> includes(value, strict)
+
+Returns a `Boolean` representing whether or not the given value was in the `Object`.
+
+#####Arguments
+`value` - The value to search for.
+`strict` - Whether or not the strict Boolean equality operator should be used (`===`). Defaults to `true`.
+
+> reduce(function, initial)
+
+Reduces the elements of the `Object` to one value.
+
+#####Arguments
+`function` - A `Function` taking the following parameters:  
+&nbsp;&nbsp;&nbsp;&nbsp;`accumulator` - The accumulator.
+&nbsp;&nbsp;&nbsp;&nbsp;`value` - The value currently being reduced.  
+&nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the value currently being reduced.
+&nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being tested. 
+
+> compare(value)
+
+Returns a `Boolean` representing whether or not the given value is the same as the `Object`.
+
+#####Arguments
+`value` - The `Object` to compare with.
