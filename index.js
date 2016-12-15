@@ -79,12 +79,6 @@ function init() {
     Object.defineProperty(Object.prototype, "jsonString", {
         get: function() {
             return JSON.stringify(this);
-        },
-        set: function(val) {
-            var parsed = JSON.parse(val);
-            for(let i in parsed) {
-                this[i] = parsed[i];
-            }
         }
     });
     Object.defineProperty(Object.prototype, "map", {
