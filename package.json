@@ -1,7 +1,7 @@
 {
   "name": "useful-prototypes",
   "version": "1.0.0",
-  "description": "A collection of useful prototype definitions",
+  "description": "Some useful prototypes.",
   "main": "index.js",
   "scripts": {
     "test": "echo oh noes"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Aplet123/allnodewrappersever.git"
   },
   "keywords": [
-    "prototypes"
+    "wordnet"
   ],
   "author": "Un Known",
   "license": "ISC",
@@ -19,6 +19,8 @@
     "url": "https://github.com/Aplet123/allnodewrappersever/issues"
   },
   "homepage": "https://github.com/Aplet123/allnodewrappersever#readme",
-  "dependencies": {}
+  "dependencies": {
+    "request": "^2.79.0",
+    "cheerio": "^0.22.0"
   }
 }
