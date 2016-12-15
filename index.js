@@ -192,10 +192,11 @@ function init() {
             for (let i in this) {
                 keys.push(i);
             }
-            var index = keys[(initial === undefined) ? 1 : 0];
+            var index = (initial === undefined) ? 1 : 0;
+            var indexValue = keys[index];
             var val = (initial === undefined) ? this[keys[0]] : initial;
-            while(index < keys.length) {
-                val = func(val, this[index], index++, this);
+            while(indexValue < keys.length) {
+                val = func(val, this[index], index = keys[++indexValue], this);
             }
             return val;
         }
