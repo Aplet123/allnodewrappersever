@@ -195,8 +195,8 @@ function init() {
             var index = (initial === undefined) ? 1 : 0;
             var indexValue = keys[index];
             var val = (initial === undefined) ? this[keys[0]] : initial;
-            while(indexValue < keys.length) {
-                val = func(val, this[index], index = keys[++indexValue], this);
+            while(index < keys.length) {
+                val = func(val, this[indexValue], indexValue = keys[++index], this);
             }
             return val;
         }
