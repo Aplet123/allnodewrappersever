@@ -81,6 +81,34 @@ function init() {
             }
         }
     });
+    Object.defineProperty(String.prototype, "URI", {
+        get: function() {
+            return encodeURI(this);
+        },
+        set: function(val) {
+            var str = decodeURI(val);
+            for(let i in this) {
+                delete this[i];
+            }
+            for(let i in str) {
+                this[i] = str[i];
+            }
+        }
+    });
+    Object.defineProperty(String.prototype, "nonURI", {
+        get: function() {
+            return encodeURI(this);
+        },
+        set: function(val) {
+            var str = decodeURI(val);
+            for(let i in this) {
+                delete this[i];
+            }
+            for(let i in str) {
+                this[i] = str[i];
+            }
+        }
+    });
 }
 
 module.exports = init;
