@@ -72,3 +72,37 @@ Deletes each element that does not satisfy a filter function. Returns an `Object
 &nbsp;&nbsp;&nbsp;&nbsp;`value` - The value of the element.  
 &nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the element.  
 &nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being filtered.  
+
+> indexOf(value, strict)
+Returns the index of the given value, returns `null` if the value was not found.
+
+#####Arguments
+`value` - The value to search for.
+`strict` - Whether or not the strict Boolean equality operator should be used (`===`). Defaults to `true`.
+
+> merge(object, overwrite)
+Merges 2 `Object`s together. Returns an `Object`.
+
+#####Arguments
+`object` - The `Object` which will be merged.
+`overwrite` - A `Boolean` representing whether or not to overwrite current properties of the `Object`.
+
+> every(function)
+
+Tests if every element of an `Object` follows a test `Function`.
+
+#####Arguments
+`function` - A `Function` taking the following parameters:  
+&nbsp;&nbsp;&nbsp;&nbsp;`value` - The value of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being tested. 
+
+> every(function)
+
+Tests if at least one element of an `Object` follows a test `Function`.
+
+#####Arguments
+`function` - A `Function` taking the following parameters:  
+&nbsp;&nbsp;&nbsp;&nbsp;`value` - The value of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`index` - The index of the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;`object` - The object that is being tested. 
