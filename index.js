@@ -55,8 +55,32 @@ function init() {
             return this;
         }
     });
+    Object.defineProperty(Object.prototype, "jsonString", {
+        get: function() {
+            return JSON.stringify(this);
+        },
+        set: function(val) {
+            var parsed = JSON.parse(val);
+            for(let i in parsed) {
+                this[i] = parsed[i];
+            }
+        }
+    });
+    //STRING PROTOTYPES
+    Object.defineProperty(String.prototype, "jsonObject", {
+        get: function() {
+            return JSON.parse(this);
+        },
+        set: function(val) {
+            var str = JSON.stringify(val);
+            for(let i in this) {
+                delete this[i];
+            }
+            for(let i in str) {
+                this[i] = str[i];
+            }
+        }
+    });
 }
 
-module.exports = {
-    init
-};
+module.exports = init;
