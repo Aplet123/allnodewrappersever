@@ -18,6 +18,7 @@
   "bugs": {
     "url": "https://github.com/Aplet123/allnodewrappersever/issues"
   },
-  "homepage": "https://github.com/Aplet123/allnodewrappersever#readme"
+  "homepage": "https://github.com/Aplet123/allnodewrappersever#readme",
+  "dependencies": {}
   }
 }
