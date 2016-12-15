@@ -104,10 +104,10 @@ function init() {
         }
     });
     Object.defineProperty(Object.prototype, "merge", {
-        value: function(obj, merge) {
+        value: function(obj, overwrite) {
             var self = this.copy();
             for(let i in obj) {
-                if(i in self && merge) {
+                if(i in self && overwrite) {
                     self[i] = obj[i];
                 } else if (!(i in self)) {
                     self[i] = obj[i];
