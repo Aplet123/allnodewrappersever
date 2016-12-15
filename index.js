@@ -120,8 +120,8 @@ function init() {
         value: function(func) {
             var self = this.copy();
             for(let i in self) {
-                if (!func(this[i], i, this)) {
-                    delete this[i];
+                if (!func(self[i], i, self)) {
+                    delete self[i];
                 }
             }
             return self;
